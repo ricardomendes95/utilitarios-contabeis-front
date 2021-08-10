@@ -48,7 +48,7 @@ export const Sidebar: React.FC = ({ children }) => {
             </SubMenu>
 
             <Menu.Item key="9" icon={<SettingOutlined />}>
-              <Link to="">Configurações</Link>
+              <Link to="/config">Configurações</Link>
             </Menu.Item>
           </Menu>
         </Sider>

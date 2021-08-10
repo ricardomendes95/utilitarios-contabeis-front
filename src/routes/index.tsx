@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import CartaResponsabilidade from '../pages/CartaResponsabilidade'
+import { Config } from '../pages/config'
 import Home from '../pages/Home'
 
 export const Routes: React.FC = () => {
@@ -12,6 +13,7 @@ export const Routes: React.FC = () => {
           path="/cartaResponsabilidade"
           component={CartaResponsabilidade}
         />
+        <Route path="/config" component={Config} />
       </Switch>
     </BrowserRouter>
   )

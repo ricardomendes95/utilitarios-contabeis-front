@@ -32,4 +32,7 @@ export default interface Definitions {
     uf?: string
     cep?: string
   }
+  ConfigIpDominio: {
+    ipServer?: string
+  }
 }
