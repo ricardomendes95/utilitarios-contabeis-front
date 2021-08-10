@@ -55,7 +55,7 @@ export const Sidebar: React.FC = ({ children }) => {
         <Layout className="site-layout">
           <Content>{children}</Content>
           <Footer style={{ textAlign: 'center' }}>
-            Ant Design ©2018 Created by Ant UED
+            Utilitários Contabéis ©2021 desenvolvido por TI Cont.
           </Footer>
         </Layout>
       </Layout>

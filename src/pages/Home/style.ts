@@ -2,7 +2,13 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   height: 100%;
-  background-color: #155fcf;
+  /* background-color: #155fcf; */
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #9dc1ff 0,
+    #3c78f2 50%,
+    #003581 100%
+  );
 `
 export const SectionMsg = styled.div`
   position: absolute;
