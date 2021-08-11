@@ -26,7 +26,7 @@ export const Config = () => {
   }, [])
 
   return (
-    <Sidebar>
+    <Sidebar selected="9">
       <Content style={{ padding: '15px' }}>
         <Card type="inner" title="Conexão Dominio">
           <Row>

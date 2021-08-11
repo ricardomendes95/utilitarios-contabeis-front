@@ -161,7 +161,7 @@ const CartaResponsabilidade = () => {
   }
 
   return (
-    <Sidebar>
+    <Sidebar selected="3" open="sub1">
       <Layout>
         <Content style={{ padding: '15px' }}>
           <Spin spinning={spining.loading}>

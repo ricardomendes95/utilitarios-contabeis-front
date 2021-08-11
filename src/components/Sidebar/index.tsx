@@ -10,9 +10,19 @@ const { SubMenu } = Menu
 
 const { Header, Footer, Sider, Content } = Layout
 
+interface MenuProps {
+  selected?: '1' | '9' | '3'
+  open?: 'sub1' | 'none'
+}
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const Sidebar: React.FC = ({ children }) => {
+export const Sidebar: React.FC<MenuProps> = ({
+  open = 'none',
+  selected = '1',
+  children
+}) => {
   const [state, setState] = useState({ collapsed: false })
+  // const [selected, setSelected] = useState('')
 
   function onCollapse() {
     setState({
@@ -33,13 +43,19 @@ export const Sidebar: React.FC = ({ children }) => {
             />
           </Link>
 
-          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+          <Menu
+            theme="dark"
+            defaultSelectedKeys={['1']}
+            selectedKeys={[selected]}
+            defaultOpenKeys={[open]}
+            mode="inline"
+          >
             <SubMenu key="sub1" icon={<FilePdfOutlined />} title="Relatórios">
               <Tooltip
                 placement="rightTop"
                 title="Carta de Responsabilidade da Administração"
               >
-                <Menu.Item key="3">
+                <Menu.Item key="3" icon={<FilePdfOutlined />}>
                   <Link to="/cartaResponsabilidade">
                     Carta de Responsabilidade
                   </Link>
